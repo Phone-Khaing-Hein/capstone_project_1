@@ -76,9 +76,10 @@ Clone this repository to your desired folder:
 
 Example commands:
 
-````sh
+```sh
   cd my-folder
   git clone https://github.com/Rimuru-Tempest-26/capstone_project_1.git
+```
 
 ### Install
 
@@ -89,7 +90,7 @@ Example command:
 ```shs
   cd my-project
   npm install
-````
+```
 
 ### Usage
 
