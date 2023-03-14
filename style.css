@@ -282,18 +282,29 @@
   }
 
   .concert-card-color {
-    background-color: rgba(236, 82, 66, 0.8);
-    padding: 70px 150px;
+    background-color: rgba(236, 82, 66, 0.7);
+    padding: 100px 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    backdrop-filter: blur(5px);
   }
 
   .concert-card {
     color: #fff;
     margin-bottom: 20px;
-    background-image: url("./images/past-concert1.png");
+    background-image: url("./images/varcamp-concert2.jpg");
+    background-size: cover;
+  }
+
+  .concert-card-title {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .concert-card-description {
+    font-weight: 400;
   }
 }
