@@ -18,24 +18,24 @@ hambuger.addEventListener('click', () => {
   div.innerHTML = `
     <img id="cross" src="./images/icons/cross.svg" style="width:40px;" alt="Cross Icon">
     <div style="display:flex;flex-direction:column;align-items:center;margin-top:30px;gap:10px;">
-      <a href="./about.html" style="text-decoration:none;color:#fff;font-size:25px;">About</a>
-      <a href="#program" id="programLink" style="text-decoration:none;color:#fff;font-size:25px;">Program</a>
+      <a href="./index.html" style="text-decoration:none;color:#fff;font-size:25px;">Home</a>
+      <a href="#" id="programLink" style="text-decoration:none;color:#fff;font-size:25px;">Program</a>
       <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">Register</a>
-      <a href="#partner" id="partnerLink" style="text-decoration:none;color:#fff;font-size:25px;">Sponsor</a>
+      <a href="#" id="partnerLink" style="text-decoration:none;color:#fff;font-size:25px;">Sponsor</a>
       <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">News</a>
       <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">Goto VarCamp</a>
     </div>
   `;
   body.appendChild(div);
 
-  const headline = document.getElementById('headline');
-  const program = document.getElementById('program');
-  const artist = document.getElementById('artist');
-  const partner = document.getElementById('partner');
-  const footer = document.getElementById('footer');
-  headline.style = 'filter:blur(3px)';
-  program.style = 'filter:blur(3px)';
-  artist.style = 'filter:blur(3px)';
+  const about = document.getElementById('about');
+  const logo = document.getElementById('logo');
+  const concert = document.getElementById('concert');
+  const partner = document.getElementById('about-partner');
+  const footer = document.getElementById('about-footer');
+  about.style = 'filter:blur(3px)';
+  logo.style = 'filter:blur(3px)';
+  concert.style = 'filter:blur(3px)';
   partner.style = 'filter:blur(3px)';
   footer.style = 'filter:blur(3px)';
 
@@ -47,26 +47,15 @@ hambuger.addEventListener('click', () => {
     `;
     hambuger.style = 'display:block;';
     body.removeChild(div);
-    headline.style = 'filter:blur(0)';
-    program.style = 'filter:blur(0)';
-    artist.style = 'filter:blur(0)';
+    about.style = 'filter:blur(0)';
+    logo.style = 'filter:blur(0)';
+    concert.style = 'filter:blur(0)';
     partner.style = 'filter:blur(0)';
     footer.style = 'filter:blur(0)';
   }
 
   const cross = document.getElementById('cross');
   cross.addEventListener('click', () => {
-    removeMobileMenu();
-  });
-
-  const programLink = document.getElementById('programLink');
-  const partnerLink = document.getElementById('partnerLink');
-
-  programLink.addEventListener('click', () => {
-    removeMobileMenu();
-  });
-
-  partnerLink.addEventListener('click', () => {
     removeMobileMenu();
   });
 });

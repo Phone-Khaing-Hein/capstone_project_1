@@ -7,6 +7,14 @@
   font-family: "Lato", sans-serif;
 }
 
+.brand {
+  cursor: pointer;
+}
+
+.active {
+  color: #ec5242 !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,7 +32,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  #navbar {
+  #header {
     display: none;
   }
 
@@ -195,6 +203,7 @@ p {
     font-size: 11px;
   }
 
+  #about-partner,
   #partner {
     background-color: #272a31;
     color: #fff;
@@ -237,6 +246,28 @@ p {
     align-self: center;
   }
 
+  .about-footer-description {
+    display: none;
+  }
+
+  #about-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 30px 20px 20px 20px;
+  }
+
+  #about {
+    padding: 15px 20px;
+    background: url("./images/background.png");
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px 300px rgba(231, 224, 224, 0.7) inset;
+  }
+
   .about-text {
     margin-top: 20px;
     text-align: center;
@@ -260,6 +291,16 @@ p {
     padding: 0 20px;
   }
 
+  .logo-img-box {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #606060;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+
   .logo-title {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -276,16 +317,6 @@ p {
     margin-bottom: 50px;
     align-self: center;
     margin-top: 30px;
-  }
-
-  .logo-img-box {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #606060;
-    margin-bottom: 50px;
-    padding: 0 20px;
   }
 
   #concert {
@@ -344,6 +375,8 @@ p {
     right: 0;
     top: 0;
     left: 0;
+    display: block;
+    z-index: 2;
   }
 
   .welcome {
@@ -355,17 +388,17 @@ p {
   }
 
   #navbar {
-    padding: 10px 200px;
+    padding: 10px 200px 10px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
   }
 
   #menu {
     display: flex;
     align-items: center;
     gap: 50px;
-    margin-right: 50px;
   }
 
   #menu > li > a {
@@ -386,6 +419,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 50px;
   }
 
   .mini-nav {
@@ -410,10 +444,15 @@ p {
     background-color: #606060;
     padding: 10px 20px;
     display: inline-block;
+    width: 200px;
+  }
+
+  .nav-image {
+    width: 130px;
   }
 
   #headline {
-    padding: 15px 200px;
+    padding: 15px 200px 15px 200px;
     background: url("./images/background.png");
     display: flex;
     flex-direction: column;
@@ -444,7 +483,7 @@ p {
     margin-bottom: 20px;
     color: #272a31;
     text-align: justify;
-    width: 700px;
+    width: 65%;
   }
 
   .headline-date {
@@ -492,6 +531,9 @@ p {
     display: flex;
     gap: 10px;
     padding: 20px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
   }
 
   .program-card {
@@ -502,8 +544,7 @@ p {
     gap: 10px;
     padding: 20px 25px;
     background-color: rgba(255, 255, 255, 0.2);
-    height: 250px;
-    width: 210px;
+    width: 15%;
     margin-bottom: 50px;
   }
 
@@ -529,7 +570,7 @@ p {
 
   #artist {
     display: flex;
-    padding: 10px 100px;
+    padding: 10px 100px 10px 100px;
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
@@ -634,11 +675,41 @@ p {
     margin-bottom: 10px;
   }
 
+  #about {
+    padding: 15px 0;
+    background: url("./images/background.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px 300px rgba(231, 224, 224, 0.7) inset;
+  }
+
+  .about-description {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    color: #272a31;
+    text-align: justify;
+    width: 70%;
+  }
+
   .about-mail {
     align-self: center;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     color: #272a31;
     text-decoration: none;
+  }
+
+  #about-footer {
+    background-color: #2e2e2e;
+    color: #fff;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 30px 200px;
   }
 
   #logo {
@@ -667,13 +738,13 @@ p {
   }
 
   .logo-img-box {
-    width: 80%;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #606060;
     margin-bottom: 50px;
-    padding: 0 20px;
+    padding: 0 50px;
   }
 
   #concert {
@@ -696,6 +767,12 @@ p {
     color: #212529;
   }
 
+  .concert-main-card {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
   .concert-card-color {
     background-color: rgba(236, 82, 66, 0.7);
     padding: 100px 150px;
@@ -712,6 +789,10 @@ p {
     margin-bottom: 20px;
     background-image: url("./images/varcamp-concert2.jpg");
     background-size: cover;
+  }
+
+  #about-partner {
+    display: none;
   }
 
   .concert-card-title {

@@ -10,9 +10,37 @@
 </head>
 
 <body>
-    <section id="headline">
+    <header id="header">
+        <div class="mini-nav">
+            <ul class="mini-nav-list">
+                <li><img src="./images/icons/facebook.svg" alt="facebook svg"></li>
+                <li><img src="./images/icons/twitter.svg" alt="twitter svg"></li>
+                <li><a href="#">Burmese</a></li>
+                <li><a href="index.html">My page</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <nav id="navbar">
+            <div class="brand">
+                <a href="index.html">
+                    <img class="nav-image" src="./images/icons/varcamp_dark.svg" alt="brand svg">
+                </a>
+            </div>
+            <div class="main-menu">
+                <ul id="menu">
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="#">Program</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Sponsor</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+                <button class="menu-button">Register for VarCamp</button>
+            </div>
+        </nav>
+    </header>
+    <section id="about">
         <img id="hambuger" src="./images/icons/list.svg" alt="Hambuger Icon">
-        <p class="welcome">"Hello! Sharing World"</p>
+        <p class="welcome"></p>
         <h1 class="headline-title">
             Varcamp in Myanmar 2023
         </h1>
@@ -50,35 +78,41 @@
             The logo of Iron Cross Fund Raising concert 2023 was decided through the logo competition from 8.June to
             7.July.
         </p>
-        <div class="concert-card">
-            <div class="concert-card-color">
-                <h3 class="concert-card-title">2021</h3>
-                <p class="concert-card-description">VarCamp in Virtual Conference</p>
+        <div class="concert-main-card">
+            <div class="concert-card">
+                <div class="concert-card-color">
+                    <h3 class="concert-card-title">2021</h3>
+                    <p class="concert-card-description">VarCamp in Virtual Conference</p>
+                </div>
             </div>
-        </div>
-        <div class="concert-card">
-            <div class="concert-card-color">
-                <h3 class="concert-card-title">2022</h3>
-                <p class="concert-card-description">VarCamp in Virtual Conference</p>
+            <div class="concert-card">
+                <div class="concert-card-color">
+                    <h3 class="concert-card-title">2022</h3>
+                    <p class="concert-card-description">VarCamp in Virtual Conference</p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="partner">
+    <section id="about-partner">
         <h2 class="partner-main-title">Partner</h2>
         <hr class="line" style="align-self: center;">
         <div class="partner-name">
             <img src="./images/workadventure.png" alt="Workadvanture logo" class="partner-image">
         </div>
     </section>
-    <footer id="footer">
+    <footer id="about-footer">
         <img src="./images/icons/varcamp_dark.svg" alt="" class="footer-image">
         <div class="footer-description">
             <p>2023 VarCamp Myanmar</p>
             <br>
             <p>All rights Reserved</p>
+            <p class="about-footer-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+                blanditiis sunt necessitatibus dolorum
+                laboriosam accusamus modi consequuntur aperiam omnis! Officiis saepe corporis voluptatem nostrum optio
+                quis culpa dignissimos mollitia consequatur?</p>
         </div>
     </footer>
-    <script src="app.js"></script>
+    <script src="about.js"></script>
 </body>
 
 </html>

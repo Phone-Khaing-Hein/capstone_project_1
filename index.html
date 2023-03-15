@@ -21,15 +21,18 @@
             </ul>
         </div>
         <nav id="navbar">
-            <div href="index.html" class="brand"><img width="130" src="./images/icons/varcamp_dark.svg" alt="brand svg">
+            <div href="index.html" class="brand">
+                <a href="index.html">
+                    <img class="nav-image" src="./images/icons/varcamp_dark.svg" alt="brand svg">
+                </a>
             </div>
             <div class="main-menu">
                 <ul id="menu">
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
                     <li><a href="#program">Program</a></li>
                     <li><a href="#register">Register</a></li>
                     <li><a href="#partner">Sponsor</a></li>
-                    <li><a href="#contact-us">News</a></li>
+                    <li><a href="#">News</a></li>
                 </ul>
                 <button class="menu-button">Register for VarCamp</button>
             </div>
@@ -41,7 +44,7 @@
         <h1 class="headline-title">
             Varcamp in Myanmar 2023
         </h1>
-        <div class="headline-description">
+        <div class="about-description">
             VarCamp (virtual barcamp) is a type of conference or workshop that is organized and hosted online, rather
             than in
             person. The format of a virtual barcamp is similar to that of an in-person barcamp, with participants
@@ -101,71 +104,8 @@
     <section id="artist">
         <h2 class="artist-main-title">Feature Speakers</h2>
         <hr class="line">
-        <div class="artist-main-card">
-            <div class="artist-card">
-                <img src="./images/ThuYaKyaw.jpg" alt="" class="artist-image">
-                <div class="artist-description">
-                    <h3 class="artist-name">Thu Ya Kyaw</h3>
-                    <h4 class="artist-title">Developer Advocate for Google Cloud (AI/ML)</h4>
-                    <p class="artist-breif">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem
-                        sunt
-                        ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga
-                        nesciunt
-                        sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit
-                        amet
-                        conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
-                    </p>
-                </div>
-            </div>
-            <div class="artist-card">
-                <img src="./images/SiThuMg.jpeg" alt="" class="artist-image">
-                <div class="artist-description">
-                    <h3 class="artist-name">Si Thu Maung</h3>
-                    <h4 class="artist-title">People Strategist | Edu-Tech Entrepreneur</h4>
-                    <p class="artist-breif">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem
-                        sunt
-                        ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga
-                        nesciunt
-                        sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit
-                        amet
-                        conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
-                    </p>
-                </div>
-            </div>
-            <div class="artist-card">
-                <img src="./images/KhineZarThwe.jpg" alt="" class="artist-image">
-                <div class="artist-description">
-                    <h3 class="artist-name">Khine Zar Thwe</h3>
-                    <h4 class="artist-title">Application Engineer</h4>
-                    <p class="artist-breif">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem
-                        sunt
-                        ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga
-                        nesciunt
-                        sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit
-                        amet
-                        conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
-                    </p>
-                </div>
-            </div>
-            <div class="artist-card">
-                <img src="./images/SuMyatNoe.png" alt="" class="artist-image">
-                <div class="artist-description">
-                    <h3 class="artist-name">Su Myat Noe</h3>
-                    <h4 class="artist-title">Women in AI Myanmar Ambassador</h4>
-                    <p class="artist-breif">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem
-                        sunt
-                        ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga
-                        nesciunt
-                        sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit
-                        amet
-                        conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
-                    </p>
-                </div>
-            </div>
+        <div class="artist-main-card" id="artist-data">
+
         </div>
     </section>
     <section id="partner">
@@ -184,6 +124,7 @@
         </div>
     </footer>
     <script src="app.js"></script>
+    <script src="data.js"></script>
 </body>
 
 </html>
