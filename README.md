@@ -31,15 +31,15 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 [Capstone Project] <a name="about-project"></a>
 
-**[Portfolio]** is a unique way to showcase your work and let others know about yourself.
+**[Capstone Project]** is a unique way to showcase your work and let others know about yourself.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<p>HTML, CSS</p>
+<p>HTML, CSS, Javascript</p>
 
 <!-- Features -->
 
@@ -109,7 +109,9 @@ To run tests, run the following command:
 Example command:
 
 ```sh
-  This project has no testing command.
+  npx hint .
+  npx stylelint "**/*.{css,scss}"
+  npx eslint .
 ```
 
 ### Deployment
@@ -140,7 +142,7 @@ Example:
 
 - [ ] **responsive design**
 - [ ] **demo project**
-- [ ] **personal profilo**
+- [ ] **capstone project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
