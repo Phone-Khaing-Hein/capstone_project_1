@@ -7,7 +7,27 @@
   font-family: "Lato", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
 @media screen and (max-width: 768px) {
+  #navbar {
+    display: none;
+  }
+
   .welcome {
     margin-bottom: 10px;
     color: #ec5242;
@@ -109,6 +129,13 @@
     width: 100px;
   }
 
+  .program-main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .program-button {
     background-color: #ec5242;
     padding: 20px 15px;
@@ -200,6 +227,394 @@
     justify-content: space-between;
     align-items: stretch;
     padding: 30px 20px 20px 20px;
+  }
+
+  .footer-image {
+    width: 130px;
+  }
+
+  .footer-description {
+    align-self: center;
+  }
+
+  .about-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #272a31;
+    margin-bottom: 10px;
+  }
+
+  .about-mail {
+    align-self: center;
+    margin-bottom: 100px;
+    color: #272a31;
+    text-decoration: none;
+  }
+
+  #logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .logo-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .logo-description {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .logo-image {
+    margin-bottom: 50px;
+    align-self: center;
+    margin-top: 30px;
+  }
+
+  .logo-img-box {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #606060;
+    margin-bottom: 50px;
+    padding: 0 20px;
+  }
+
+  #concert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .concert-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .concert-description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #212529;
+  }
+
+  .concert-card-color {
+    background-color: rgba(236, 82, 66, 0.7);
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    backdrop-filter: blur(5px);
+  }
+
+  .concert-card {
+    color: #fff;
+    margin-bottom: 20px;
+    background-image: url("./images/varcamp-concert2.jpg");
+    background-size: cover;
+  }
+
+  .concert-card-title {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .concert-card-description {
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .welcome {
+    margin-bottom: 10px;
+    color: #ec5242;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 200px;
+  }
+
+  #navbar {
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 50px;
+  }
+
+  #menu > li > a {
+    color: #8d8d8d;
+  }
+
+  .menu-button {
+    width: 180px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid #ee4c32;
+    color: #ee4c32;
+    cursor: pointer;
+  }
+
+  .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mini-nav {
+    background-color: #3e3e3e;
+    padding: 3px 0 5px 0;
+  }
+
+  .mini-nav-list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    margin-right: 25px;
+  }
+
+  .mini-nav-list > li > a {
+    color: #f4f4f4;
+    font-size: 10px;
+  }
+
+  .brand {
+    background-color: #606060;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+
+  #headline {
+    padding: 15px 200px;
+    background: url("./images/background.png");
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 15px 300px rgba(231, 224, 224, 0.7) inset;
+  }
+
+  .headline-title {
+    margin-bottom: 20px;
+    color: #ec5242;
+    font-size: 50px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: url("./images/title-background.jpeg");
+  }
+
+  #hambuger {
+    display: none;
+  }
+
+  .headline-description {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    color: #272a31;
+    text-align: justify;
+    width: 700px;
+  }
+
+  .headline-date {
+    margin-bottom: 15px;
+    color: #606060;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .headline-place {
+    margin-bottom: 150px;
+    color: #606060;
+    font-size: 20px;
+  }
+
+  #program {
+    background-image: url("./images/program-background.jpg");
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .program-main-title {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .line {
+    display: block;
+    width: 49px;
+    height: 4px;
+    border: 0;
+    border-top: 4px solid #be473f;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .program-main-card {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .program-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding: 20px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 250px;
+    width: 210px;
+    margin-bottom: 50px;
+  }
+
+  .program-title {
+    color: #ec5242;
+  }
+
+  .program-image {
+    width: 65px;
+    height: 65px;
+  }
+
+  .program-button {
+    display: none;
+  }
+
+  .program-link {
+    margin-top: -30px;
+    color: #bdbdc5;
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+
+  #artist {
+    display: flex;
+    padding: 10px 100px;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .artist-main-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .artist-image {
+    width: 150px;
+  }
+
+  .artist-main-card {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .artist-card {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .artist-name {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: calc(1.3rem + 0.6vw);
+  }
+
+  .artist-title {
+    font-size: 14px;
+    color: #ff6d4f;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .artist-breif {
+    text-align: justify;
+    color: #868686;
+    font-size: 11px;
+    width: 300px;
+  }
+
+  #partner {
+    background-color: #272a31;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .partner-main-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .partner-image {
+    width: 300px;
+  }
+
+  .partner-name {
+    align-self: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  #footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 30px 200px 20px 200px;
   }
 
   .footer-image {

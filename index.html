@@ -10,6 +10,31 @@
 </head>
 
 <body>
+    <header id="header">
+        <div class="mini-nav">
+            <ul class="mini-nav-list">
+                <li><img src="./images/icons/facebook.svg" alt="facebook svg"></li>
+                <li><img src="./images/icons/twitter.svg" alt="twitter svg"></li>
+                <li><a href="#">Burmese</a></li>
+                <li><a href="index.html">My page</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+        <nav id="navbar">
+            <div href="index.html" class="brand"><img width="130" src="./images/icons/varcamp_dark.svg" alt="brand svg">
+            </div>
+            <div class="main-menu">
+                <ul id="menu">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#partner">Sponsor</a></li>
+                    <li><a href="#contact-us">News</a></li>
+                </ul>
+                <button class="menu-button">Register for VarCamp</button>
+            </div>
+        </nav>
+    </header>
     <section id="headline">
         <img id="hambuger" src="./images/icons/list.svg" alt="Hambuger Icon">
         <p class="welcome">"Hello! Sharing World"</p>
@@ -29,100 +54,117 @@
     <section id="program">
         <h2 class="program-main-title">Main Program</h2>
         <hr class="line">
-        <div class="program-card">
-            <img src="./images/icons/lecture.svg" alt="Lecture svg" class="program-image">
-            <h4 class="program-title">Lecture</h4>
-            <p>
-                Listen to the speakers from various companies about the messages of sharing and opening.
-            </p>
+        <div class="program-main-card">
+            <div class="program-card">
+                <img src="./images/icons/lecture.svg" alt="Lecture svg" class="program-image">
+                <h4 class="program-title">Lecture</h4>
+                <p>
+                    Listen to the speakers from various companies about the messages of sharing and opening.
+                </p>
+            </div>
+            <div class="program-card">
+                <img src="./images/icons/forum.svg" alt="forum svg" class="program-image">
+                <h4 class="program-title">Forum</h4>
+                <p>
+                    Have the time to share your thoughts and opinions with experts for each topic.
+                </p>
+            </div>
+            <div class="program-card">
+                <img src="./images/icons/workshop.svg" alt="Workshop svg" class="program-image">
+                <h4 class="program-title">Workshop</h4>
+                <p>
+                    Try creating your own work using open source license rather than just watching.
+                </p>
+            </div>
+            <div class="program-card">
+                <img src="./images/icons/communication.svg" alt="Communication svg" class="program-image">
+                <h4 class="program-title">Discussion</h4>
+                <p>
+                    Interactive and flexible capabilities for each content; You can learn communication and teamwork
+                    skills.
+                </p>
+            </div>
+            <div class="program-card">
+                <img src="./images/icons/photograph.svg" alt="Photograph svg" class="program-image">
+                <h4 class="program-title">Photograph</h4>
+                <p>
+                    At the end of the program. Yes, it's photo time! You can take pictures of yourself or with other
+                    people.
+                </p>
+            </div>
+            <button class="program-button" id="register">
+                Register for the VarCamp
+            </button>
         </div>
-        <div class="program-card">
-            <img src="./images/icons/forum.svg" alt="forum svg" class="program-image">
-            <h4 class="program-title">Forum</h4>
-            <p>
-                Have the time to share your thoughts and opinions with experts for each topic.
-            </p>
-        </div>
-        <div class="program-card">
-            <img src="./images/icons/workshop.svg" alt="Workshop svg" class="program-image">
-            <h4 class="program-title">Workshop</h4>
-            <p>
-                Try creating your own work using open source license rather than just watching.
-            </p>
-        </div>
-        <div class="program-card">
-            <img src="./images/icons/communication.svg" alt="Communication svg" class="program-image">
-            <h4 class="program-title">Discussion</h4>
-            <p>
-                Interactive and flexible capabilities for each content; You can learn communication and teamwork skills.
-            </p>
-        </div>
-        <div class="program-card">
-            <img src="./images/icons/photograph.svg" alt="Photograph svg" class="program-image">
-            <h4 class="program-title">Photograph</h4>
-            <p>
-                At the end of the program. Yes, it's photo time! You can take pictures of yourself or with other people
-                who are allowed
-                to take pictures.
-            </p>
-        </div>
-        <button class="program-button" id="register">
-            Register for the VarCamp
-        </button>
+        <a href="#headline" class="program-link"><u>See the whole program</u></a>
     </section>
     <section id="artist">
         <h2 class="artist-main-title">Feature Speakers</h2>
         <hr class="line">
-        <div class="artist-card">
-            <img src="./images/ThuYaKyaw.jpg" alt="" class="artist-image">
-            <div class="artist-description">
-                <h3 class="artist-name">Thu Ya Kyaw</h3>
-                <h4 class="artist-title">Developer Advocate for Google Cloud (AI/ML)</h4>
-                <p class="artist-breif">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem sunt
-                    ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga nesciunt
-                    sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet
-                    conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
-                </p>
+        <div class="artist-main-card">
+            <div class="artist-card">
+                <img src="./images/ThuYaKyaw.jpg" alt="" class="artist-image">
+                <div class="artist-description">
+                    <h3 class="artist-name">Thu Ya Kyaw</h3>
+                    <h4 class="artist-title">Developer Advocate for Google Cloud (AI/ML)</h4>
+                    <p class="artist-breif">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem
+                        sunt
+                        ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga
+                        nesciunt
+                        sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit
+                        amet
+                        conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="artist-card">
-            <img src="./images/SiThuMg.jpeg" alt="" class="artist-image">
-            <div class="artist-description">
-                <h3 class="artist-name">Si Thu Maung</h3>
-                <h4 class="artist-title">People Strategist | Edu-Tech Entrepreneur</h4>
-                <p class="artist-breif">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem sunt
-                    ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga nesciunt
-                    sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet
-                    conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
-                </p>
+            <div class="artist-card">
+                <img src="./images/SiThuMg.jpeg" alt="" class="artist-image">
+                <div class="artist-description">
+                    <h3 class="artist-name">Si Thu Maung</h3>
+                    <h4 class="artist-title">People Strategist | Edu-Tech Entrepreneur</h4>
+                    <p class="artist-breif">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem
+                        sunt
+                        ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga
+                        nesciunt
+                        sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit
+                        amet
+                        conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="artist-card">
-            <img src="./images/KhineZarThwe.jpg" alt="" class="artist-image">
-            <div class="artist-description">
-                <h3 class="artist-name">Khine Zar Thwe</h3>
-                <h4 class="artist-title">Application Engineer</h4>
-                <p class="artist-breif">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem sunt
-                    ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga nesciunt
-                    sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet
-                    conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
-                </p>
+            <div class="artist-card">
+                <img src="./images/KhineZarThwe.jpg" alt="" class="artist-image">
+                <div class="artist-description">
+                    <h3 class="artist-name">Khine Zar Thwe</h3>
+                    <h4 class="artist-title">Application Engineer</h4>
+                    <p class="artist-breif">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem
+                        sunt
+                        ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga
+                        nesciunt
+                        sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit
+                        amet
+                        conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="artist-card">
-            <img src="./images/SuMyatNoe.png" alt="" class="artist-image">
-            <div class="artist-description">
-                <h3 class="artist-name">Su Myat Noe</h3>
-                <h4 class="artist-title">Women in AI Myanmar Ambassador</h4>
-                <p class="artist-breif">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem sunt
-                    ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga nesciunt
-                    sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet
-                    conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
-                </p>
+            <div class="artist-card">
+                <img src="./images/SuMyatNoe.png" alt="" class="artist-image">
+                <div class="artist-description">
+                    <h3 class="artist-name">Su Myat Noe</h3>
+                    <h4 class="artist-title">Women in AI Myanmar Ambassador</h4>
+                    <p class="artist-breif">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem
+                        sunt
+                        ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga
+                        nesciunt
+                        sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit
+                        amet
+                        conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con
+                    </p>
+                </div>
             </div>
         </div>
     </section>
