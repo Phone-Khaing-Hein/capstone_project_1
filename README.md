@@ -33,7 +33,7 @@
 
 # 📖 [Capstone Project] <a name="about-project"></a>
 
-**[Capstone Project]** is a unique way to showcase your work and let others know about yourself.
+VarCamp website is an app to showcase best practices of HTML code, CSS and DOM Manipulation. VarCamp (virtual barcamp) is a type of conference or workshop that is organized and hosted online, rather than in person. The format of a virtual barcamp is similar to that of an in-person barcamp, with participants presenting talks, leading discussions, and participating in collaborative activities.
 
 ## 🛠 Built With <a name="built-with"></a>
 
