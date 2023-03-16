@@ -41,6 +41,7 @@ function createDiv() {
      <div style="display:flex;flex-direction:column;align-items:center;margin-top:30px;gap:10px;">
        <a href="./index.html" style="text-decoration:none;color:#fff;font-size:25px;">Home</a>
        <a href="#concert" id="programLink" style="text-decoration:none;color:#fff;font-size:25px;">Concerts</a>
+       <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">Register</a>
        <a href="#about-partner" id="partnerLink" style="text-decoration:none;color:#fff;font-size:25px;">Sponsor</a>
        <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">News</a>
        <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">Goto VarCamp</a>
