@@ -1,14 +1,14 @@
 const hamburger = document.getElementById('hambuger');
 const body = document.getElementsByTagName('body')[0];
 const welcom = document.getElementsByClassName('welcome')[0];
-const headline = document.getElementById('headline');
-const program = document.getElementById('program');
-const artist = document.getElementById('artist');
-const partner = document.getElementById('partner');
-const footer = document.getElementById('footer');
+const about = document.getElementById('about');
+const logo = document.getElementById('logo');
+const concert = document.getElementById('concert');
+const partner = document.getElementById('about-partner');
+const footer = document.getElementById('about-footer');
 
 function removeBlur() {
-  [headline, program, artist, partner, footer].forEach((element) => {
+  [about, logo, concert, partner, footer].forEach((element) => {
     element.style.filter = 'blur(0)';
   });
 }
@@ -38,20 +38,20 @@ function createDiv() {
   div.style.zIndex = '2';
   div.innerHTML = `
     <img id="cross" src="./images/icons/cross.svg" style="width:40px;" alt="Cross Icon">
-    <div style="display:flex;flex-direction:column;align-items:center;margin-top:30px;gap:10px;">
-      <a href="./about.html" style="text-decoration:none;color:#fff;font-size:25px;">About</a>
-      <a href="#program" id="programLink" style="text-decoration:none;color:#fff;font-size:25px;">Program</a>
-      <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">Register</a>
-      <a href="#partner" id="partnerLink" style="text-decoration:none;color:#fff;font-size:25px;">Sponsor</a>
-      <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">News</a>
-      <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">Goto VarCamp</a>
-    </div>
+     <div style="display:flex;flex-direction:column;align-items:center;margin-top:30px;gap:10px;">
+       <a href="./index.html" style="text-decoration:none;color:#fff;font-size:25px;">Home</a>
+       <a href="#concert" id="programLink" style="text-decoration:none;color:#fff;font-size:25px;">Concerts</a>
+       <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">Register</a>
+       <a href="#about-partner" id="partnerLink" style="text-decoration:none;color:#fff;font-size:25px;">Sponsor</a>
+       <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">News</a>
+       <a href="#" style="text-decoration:none;color:#fff;font-size:25px;">Goto VarCamp</a>
+     </div>
   `;
   return div;
 }
 
 function blurElements() {
-  [headline, program, artist, partner, footer].forEach((element) => {
+  [about, logo, concert, partner, footer].forEach((element) => {
     element.style.filter = 'blur(3px)';
   });
 }

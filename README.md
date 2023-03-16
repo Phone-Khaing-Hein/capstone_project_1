@@ -31,15 +31,15 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 [Capstone Project] <a name="about-project"></a>
 
-**[Portfolio]** is a unique way to showcase your work and let others know about yourself.
+VarCamp website is an app to showcase best practices of HTML code, CSS and DOM Manipulation. VarCamp (virtual barcamp) is a type of conference or workshop that is organized and hosted online, rather than in person. The format of a virtual barcamp is similar to that of an in-person barcamp, with participants presenting talks, leading discussions, and participating in collaborative activities.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-<p>HTML, CSS</p>
+<p>HTML, CSS, Javascript</p>
 
 <!-- Features -->
 
@@ -55,8 +55,8 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://rimuru-tempest-26.github.io/capstone_project_1.git/)
-- [Video description Link](https://www.loom.com/share/e2adcde066ab4ff88f5685fbfdfda052)
+- [Live Demo Link](https://rimuru-tempest-26.github.io/capstone_project_1/)
+- [Video description Link](https://www.loom.com/share/32cf635f5bca46fe8ba0670e549ffd90)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +109,9 @@ To run tests, run the following command:
 Example command:
 
 ```sh
-  This project has no testing command.
+  npx hint .
+  npx stylelint "**/*.{css,scss}"
+  npx eslint .
 ```
 
 ### Deployment
@@ -140,7 +142,7 @@ Example:
 
 - [ ] **responsive design**
 - [ ] **demo project**
-- [ ] **personal profilo**
+- [ ] **capstone project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +168,7 @@ If you like my project, you can give me a star by supporting me.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thanks microverse.
+Thank you [Candy Shin](https://www.behance.net/adagio07) for designing the template!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
