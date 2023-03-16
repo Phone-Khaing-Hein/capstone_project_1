@@ -27,6 +27,20 @@ const artists = [
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem sunt ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga nesciunt sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con',
     image: 'SuMyatNoe.png',
   },
+  {
+    name: 'Htet Wai Yan Soe',
+    position: 'Head of Development @ DevelopNow.io',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem sunt ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga nesciunt sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con',
+    image: 'HtetWaiYanSoe.jpeg',
+  },
+  {
+    name: 'Aung Pyae Phyo',
+    position: 'Ex Startup Founder | Udacity-Certified Product Manager',
+    description:
+      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis illum animi iure numquam. Rem sunt ipsam, omnis voluptate quia minus deleniti dolor, recusandae nihil adipisci placeat fuga nesciunt sed quibusdam.orem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet conorem ipsum, dolor sit amet con',
+    image: 'AungPyaePhyo.jpeg',
+  },
 ];
 
 const generateArtistCard = ({
