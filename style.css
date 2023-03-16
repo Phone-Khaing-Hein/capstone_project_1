@@ -147,6 +147,10 @@ p {
     flex-direction: column;
   }
 
+  .program-link {
+    display: none;
+  }
+
   .program-button {
     background-color: #ec5242;
     padding: 20px 15px;

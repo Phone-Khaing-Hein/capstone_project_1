@@ -29,19 +29,19 @@ const artists = [
   },
 ];
 
-const artistMainCard = document.getElementById('artist-data');
-artists.map((a) => {
-  artistMainCard.innerHTML += `
-    <div class="artist-card">
-                <img src="./images/${a.image}" alt="" class="artist-image">
-                <div class="artist-description">
-                    <h3 class="artist-name">${a.name}</h3>
-                    <h4 class="artist-title">${a.position}</h4>
-                    <p class="artist-breif">
-                        ${a.description}
-                    </p>
-                </div>
-            </div>
+const generateArtistCard = ({
+  name, position, description, image,
+}) => `
+  <div class="artist-card">
+    <img src="./images/${image}" alt="" class="artist-image">
+    <div class="artist-description">
+      <h3 class="artist-name">${name}</h3>
+      <h4 class="artist-title">${position}</h4>
+      <p class="artist-breif">
+        ${description}
+      </p>
+    </div>
+  </div>
 `;
-  return true;
-});
+const artistMainCard = document.getElementById('artist-data');
+artists.map(generateArtistCard).forEach((card) => { artistMainCard.innerHTML += card; });
